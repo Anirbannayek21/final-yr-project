@@ -1,0 +1,99 @@
+body {
+    background-color: #E3FDFD;
+}
+
+canvas,
+.canvas-container {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.toolbar {
+    width: 100%;
+    background-color: #A6E3E9;
+    height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid rgb(50, 54, 57);
+}
+
+
+
+#pdf-container {
+    margin-top: 80px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.toolbar .tool {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.toolbar .tool label,
+.toolbar .tool select,
+.toolbar .tool input {
+    display: inline-block;
+    width: auto;
+    height: auto !important;
+    padding: 0;
+}
+
+.toolbar .tool input {
+    width: 50px;
+}
+
+.toolbar .tool .color-tool {
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toolbar .tool:nth-last-child(1) {
+    float: right;
+}
+
+.toolbar .tool .tool-button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(50, 54, 57);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.toolbar .tool .tool-button:hover,
+.toolbar .tool .tool-button.active {
+    background-color: rgb(34, 7, 7);
+    color: #ffff;
+    border-color: rgb(1, 1, 2);
+}
+
+.toolbar .tool .color-tool:hover,
+.toolbar .tool .color-tool.active {
+    border: 10px #000000 !important;
+    background-color: #ffff;
+}
+
+canvas,
+.canvas-container {
+    margin-bottom: 25px;
+}
+
+.canvas-container {
+    margin-left: auto;
+    margin-right: auto;
+}
